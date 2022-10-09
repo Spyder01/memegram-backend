@@ -1,0 +1,51 @@
+POST http://localhost:5000/api/signup
+content-type: application/json
+
+{
+    "username": "John",
+    "password": "123456SD@@@@12kk"
+}
+
+###
+POST http://localhost:5000/api/login
+content-type: application/json
+
+{
+    "username": "John",
+    "password": "123456SD@@@@12kk"
+}
+
+###
+GET http://localhost:5000/api/memes/templates
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjYyNzgxOTJhMTZhZDE3MTAwM2U5YTRmMiIsImlhdCI6MTY1MjAzNzk1MX0.wP2WYW7C9VveZTCjyjhFgLk1E0LE6nWAL4hJkSRLgSU 
+
+###
+
+GET http://localhost:5000/api/memes/templates/181913649
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjYyNzgxOTJhMTZhZDE3MTAwM2U5YTRmMiIsImlhdCI6MTY1MjAzNzk1MX0.wP2WYW7C9VveZTCjyjhFgLk1E0LE6nWAL4hJkSRLgSU 
+
+
+###
+
+POST http://localhost:5000/api/memes
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjYyNzgxOTJhMTZhZDE3MTAwM2U5YTRmMiIsImlhdCI6MTY1MjAzNzk1MX0.wP2WYW7C9VveZTCjyjhFgLk1E0LE6nWAL4hJkSRLgSU 
+
+
+{
+    "id": 181913649,
+    "captions": [
+        {
+            "text": "Hello",
+            "boxNumber": 0
+        }
+    ]
+}
+
+GET http://localhost:5000/api/memes
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjYyNzgxOTJhMTZhZDE3MTAwM2U5YTRmMiIsImlhdCI6MTY1MjAzNzk1MX0.wP2WYW7C9VveZTCjyjhFgLk1E0LE6nWAL4hJkSRLgSU 
+
+
